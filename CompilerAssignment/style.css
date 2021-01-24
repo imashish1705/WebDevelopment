@@ -1,0 +1,41 @@
+html, body{
+    height: 100%;
+}
+#lang{
+    float: right;
+}
+.btn{
+    border: none;
+    outline: none;
+    padding:10px;
+    color: #fff;
+    background: #f4b908;
+    border-radius: 6px;
+}
+#h1{
+    font-size: 21px;
+    font-weight: 500;
+    font-variant-caps: titling-caps;
+}
+.main{
+    height: 100%;
+    padding:20px;
+}
+#user_code{
+    margin-top: 10px;
+    width: 98%;
+    height: 50%;
+    padding: 10px;
+}
+#compile_output{
+    margin-top: 25px;
+    padding: 10px;
+    color: #ffff;
+    background: #000;
+    height: 20%;
+}
+#lang{
+    width: 100px;
+    padding: 4px;
+    border-radius: 4px;
+}
