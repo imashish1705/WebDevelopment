@@ -1,0 +1,218 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<style type="text/css">
+			.body{
+				background-image:  ;
+			}
+			
+			input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: green;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=reset] {
+    width: 100%;
+    background-color: lightblue;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #264458;
+}
+
+input[type=reset]:hover {
+    background-color: #543e27;
+}
+
+.form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    color: black;
+    margin-left: 150px;
+    margin-right: 150px;
+    padding: 20px;
+}
+		</style>
+	<script type="text/javascript">
+	function func(){
+		var a=document.getElementById("fname").value;
+		var aa=a.length;
+		var b=document.getElementById("email").value;
+		var bb=b.length;
+		
+		
+		var str=b.search("@");
+		if(aa==0||bb==0||e==0)
+			window.alert("Enter Full Data");
+		else if(str==-1)
+			window.alert("Enter Valid Email Address");
+		else if(e<10)
+		{
+			window.alert("Password minimum of 10 char");
+		}
+		else if(document.getElementById("phone").value.length !=10)
+		{
+			
+			window.alert("Enter Correct Phone Number")
+		}
+		else if(d!=repass)
+		{
+			window.alert("Password Do Not Match")
+		}
+	}
+	</script>
+	</head>
+
+	<body>
+		<header>
+			<div id="main">			
+					<ul>
+						<a href="index.html"><img src="images/log.jpg" alt=""/></a>
+						<li><a href="contact.html"><b>Contact Us</b></a></li>
+						<li id="booking"><a href="booking.html"><b>Booking</b></a></li>
+						<li><a href="aboutus.html"><b>About Us</b></a></li>
+					
+					
+						<li ><a href="index.html"><b>Home</b></a></li>							
+					</ul>				   	
+			</div>
+		</header>
+		<div class="body" style="background-image: url(images/delhi.jpg);">
+		<h1 align="center">Book jammu Tour</h1>
+			<div class="form">
+  <form >
+  	<label for="title">Title</label>
+    <select id="title" name="title">
+      <option value="Mr.">Mr.</option>
+      <option value="Miss">Miss</option>
+      <option value="Mrs">Mrs.</option>
+    </select>
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.." required="firstname">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.." required="lastname">
+
+    <label for="country">Country</label>
+    <select id="country" name="country" required="country">
+      <option value="Select Country">Select Country</option>
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+      <option value="India">India</option>
+      <option value="UK">UK</option>
+    </select>
+
+    <label for="email">Email</label>
+    <input type="text" id="email" name="Email" placeholder="Your email.." required="Email">
+
+   
+
+   
+
+    <label for="Addhar Card number">Addhar Number</label>
+    <input type="text" id="Passport No" name="Passport No" placeholder="Addhar number..">
+
+    <label for="Passport No">Confirm Password</label>
+    <input type="text" id="repas" name="Passport No" placeholder="confirm password..">
+
+    <label for="Passport No">Mobile No</label>
+    <input type="text" id="phone" name="Passport No" placeholder="phone no..">
+
+    
+    <label for="Emergency Contact">Other NUmber Contact</label>
+    <input type="text" id="Emergency Contact" name="Emergency Contact" placeholder="Your Emergency Contact..">
+  
+    <input type="submit" value="Submit" onclick="func()">
+    <input type="reset" value="Reset">
+  </form>
+</div>
+/*
+<script type="text/javascript">
+	function Submit(){
+		alert("Your Details have been recieved.");
+	}
+</script>*/
+		</div>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+
+		<footer>
+			    <div class="col-md-3">
+						<ul class="footer_box">
+							<h4>About</h4>
+							<li><a href="#">Monuments</a></li>
+							<li><a href="#">Famous Market</a></li>
+							<li><a href="#">Center Delhi</a></li>
+							<li><a href="#">Catalog Request/Download</a></li>
+						</ul>
+					</div>
+				<div class="col-md-3">
+						<ul class="footer_box">
+							<h4>Customer Support</h4>
+							<li><a href="#">Contact Us</a></li>
+							<li><a href="#">Easy to return money</a></li>
+							<
+						</ul>
+					</div>
+				<div class="col-md-3">
+						<ul class="footer_box">
+							<h4>Newsletter</h4>
+							<div class="footer_search">
+				    		   <form>
+				    			<input type="text" value="Enter your email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your email';}"><br>
+<input type="text" value="Enter your name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your name';}"><br>
+<input type="text" value="Enter your phone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your phone';}">
+
+				    			<button type="submit"> Go</button>
+				    		   </form>
+						</div>	
+								   
+				</div><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+		
+
+	</body>
+</html>

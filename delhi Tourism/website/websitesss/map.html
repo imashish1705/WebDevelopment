@@ -1,0 +1,107 @@
+<html>
+<body>
+<head>
+  <title>Location</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+  <style>
+  /* Make the image fully responsive */
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+
+</style>
+
+</head>
+
+
+
+
+
+
+<body>
+
+<nav class="navbar navbar-expand-md bg-light navbar-light">
+<a class="navbar-brand" href="index.html">
+    <img src="loggo.png" alt="logo" style="width:40px;">
+  </a>
+  <a class="navbar-brand text-success" href="index.html"><i>Delhi Tourism</i></a>
+ 
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav justify-content-center"> 
+       <li class="nav-item ">
+        <a class="nav-link text-primary" href="index.html"><b>Home</b></a>
+      </li>
+
+   <li class="nav-item dropdown">
+<a class="nav-link text-primary dropbtn" href="famousplace.html#"><b>Package</b></a>
+
+</li>
+      <li class="nav-item">
+        <a class="nav-link text-primary" href="loginpage.html" ><b>Login</b></a>
+      </li> 
+<li class="nav-item ">
+        <a class="nav-link active" href="Booking.html"><b>Booking</b></a>
+      </li>
+</div>
+<nav class="navbar navbar-expand-sm bg-light navbar-dark justify-content-center">
+</div>
+  <form class="form-inline" action="/action_page.php">
+
+    <input class="form-control p-1 mr-sm-1" type="text" id="myInput" placeholder="Search">
+    <button class="btn btn-warning"type="submit">Search</button>
+  </form>
+</nav> 
+</ul>
+  </div>  
+</nav>
+
+<h1 class="jumbotron text-center bg-light text-warning">Delhi Map</h1>
+<div class=container-fluid>
+<div id="googleMap" style="width:50%;height:400px;"></div>
+
+<script>
+function myMap() {
+var mapProp= {
+  center:new google.maps.LatLng(28.7041,77.1025),
+  zoom:11,
+};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+var marker=new google.maps.Marker({position:mapProp,map:map});
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4fRJDKWUDKI25DkbOqKEFxq7YZmB7Cxg&callback=myMap"></script>
+</div>
+</div>
+
+
+<footer class="w3-container w3-center w3-opacity w3-margin-bottom">
+
+  <div class="w3-xlarge w3-padding-16">
+     <i class=" text-primary fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="text-danger fa fa-instagram w3-hover-opacity"></i>
+    <i class="text-warning fa fa-snapchat w3-hover-opacity"></i>
+    <i class="text-danger fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class=" text-primary fa fa-twitter w3-hover-opacity"></i>
+    <i class="text-primary fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Powered by <a href="#" target="_blank" class="w3-hover-text-green">Delhi Tourism</a></p>
+</footer>
+
+
+</body>
+</html>

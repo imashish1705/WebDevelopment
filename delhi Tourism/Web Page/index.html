@@ -1,0 +1,89 @@
+﻿<html>
+	<head>
+		<title>Tourism</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+
+	<body>
+		<header>
+			<div id="main">			
+					<ul>
+						<a href="index.html"><img src="images/log.jpg" alt=""/></a>
+						<li><a href="contact.html"><b>Contact Us</b></a></li>
+						<li><a href="booking.html"><b>Booking</b></a></li>
+						<li><a href="aboutus.html"><b>About Us</b></a></li>
+						
+							
+						<li id="home"><a href="index.html"><b>Home</b></a></li>							
+					</ul>				   	
+			</div>
+		</header>
+	
+
+			<div class="Slides">
+  			<img class="mySlides" src="images/jam1.jpg" >
+  			
+		</div>
+
+		<script type="text/javascript" src="js/jquery.js"></script>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+
+		<footer>
+			    <div class="col-md-3">
+						<ul class="footer_box">
+							<h4>About</h4>
+							<li><a href="#">Jammu & kashmir</a></li>
+							<li><a href="#">j&k famous Place</a></li>
+							
+						</ul>
+					</div>
+				<div class="col-md-3">
+						<ul class="footer_box">
+							<h4>Customer Support</h4>
+							<li><a href="#">Contact Us</a></li>
+							<li><a href="#">Easy Returns Booking Money</a></li>
+							
+						</ul>
+					</div>
+				<div class="col-md-3">
+						<ul class="footer_box">
+							<h4>Newsletter</h4>
+							<div class="footer_search">
+				    		   <form>
+				    			<input type="text" value="Enter your email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your email';}"><br>
+				    			<br><input type="text" value="Enter your Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your Name';}"><br>
+<br><input type="text" value="Enter your Phone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your Phone';}"><br>
+
+
+				    			<input type="submit" value="Go">
+				    		   </form>
+						</div>					   
+				</div><br><br><br><br><br><br><br><br>
+				<div class="footer_bottom">
+			           <p><b>jammu Tour</b></p>
+		            </div>
+		</footer>
+
+	</body>
+</html>

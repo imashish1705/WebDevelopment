@@ -1,0 +1,36 @@
+footer{
+	background:black;
+	padding: 80px 10px 80px 300px;
+}
+.col-md-3{
+	width: 30%;
+	float: left;
+}
+.footer_box{
+	list-style: none;
+	padding: 0;
+}
+ul.footer_box h4{
+	color: #fff;
+	font-size: 1.1em;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-bottom: 8%;
+}
+ul.footer_box li a{
+	color: #B8B6B6;
+	font-size: 0.8125em;
+	text-decoration: none;
+	line-height: 2em;
+}
+.footer_search{
+	margin-top: 10%;
+	width: 100%;
+	position: relative;
+}
+form{
+	display: block;
+}
+.footer_bottom{
+	color: white;
+}
